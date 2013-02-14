@@ -3,7 +3,7 @@ comments: false
 date: 2006-04-09 10:24:52
 layout: post
 slug: filling-in-some-holes
-title: Filling in some holes
+title: Filling in Some Holes
 wordpress_id: 10
 categories:
 - General

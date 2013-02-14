@@ -3,7 +3,7 @@ comments: false
 date: 2006-06-06 22:07:16
 layout: post
 slug: david-gets-braces
-title: David gets braces
+title: David Gets Braces
 wordpress_id: 11
 categories:
 - General

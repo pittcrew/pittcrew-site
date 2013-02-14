@@ -3,7 +3,7 @@ comments: false
 date: 2005-09-10 13:18:19
 layout: post
 slug: davids-room-is-painted
-title: David's room is painted!
+title: David's Room Is Painted!
 wordpress_id: 8
 categories:
 - General

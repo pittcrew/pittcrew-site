@@ -3,7 +3,7 @@ comments: false
 date: 2003-04-26 11:06:50
 layout: post
 slug: david-gets-glasses
-title: David gets glasses
+title: David Gets Glasses
 wordpress_id: 36
 categories:
 - General

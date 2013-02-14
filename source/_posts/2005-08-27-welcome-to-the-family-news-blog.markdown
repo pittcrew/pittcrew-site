@@ -3,7 +3,7 @@ comments: false
 date: 2005-08-27 23:21:53
 layout: post
 slug: welcome-to-the-family-news-blog
-title: Welcome to the Family News blog
+title: Welcome to the Family News Blog
 wordpress_id: 3
 categories:
 - General

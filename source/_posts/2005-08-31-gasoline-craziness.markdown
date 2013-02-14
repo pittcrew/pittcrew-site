@@ -3,7 +3,7 @@ comments: false
 date: 2005-08-31 20:11:13
 layout: post
 slug: gasoline-craziness
-title: Gasoline craziness
+title: Gasoline Craziness
 wordpress_id: 6
 categories:
 - General

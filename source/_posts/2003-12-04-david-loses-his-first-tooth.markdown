@@ -3,7 +3,7 @@ comments: false
 date: 2003-12-04 10:28:49
 layout: post
 slug: david-loses-his-first-tooth
-title: David loses his first tooth
+title: David Loses His First Tooth
 wordpress_id: 32
 categories:
 - General

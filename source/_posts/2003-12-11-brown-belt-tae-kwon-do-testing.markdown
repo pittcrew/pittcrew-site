@@ -3,7 +3,7 @@ comments: false
 date: 2003-12-11 10:00:33
 layout: post
 slug: brown-belt-tae-kwon-do-testing
-title: Brown belt Tae Kwon Do testing
+title: Brown Belt Tae Kwon Do Testing
 wordpress_id: 31
 categories:
 - Taekwondo

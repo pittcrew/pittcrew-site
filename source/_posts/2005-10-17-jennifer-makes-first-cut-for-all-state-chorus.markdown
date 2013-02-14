@@ -3,7 +3,7 @@ comments: false
 date: 2005-10-17 20:20:03
 layout: post
 slug: jennifer-makes-first-cut-for-all-state-chorus
-title: Jennifer makes first cut for All-State Chorus
+title: Jennifer Makes First Cut for All-State Chorus
 wordpress_id: 9
 categories:
 - General

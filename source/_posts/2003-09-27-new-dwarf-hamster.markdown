@@ -3,7 +3,7 @@ comments: false
 date: 2003-09-27 10:32:44
 layout: post
 slug: new-dwarf-hamster
-title: New dwarf hamster
+title: New Dwarf Hamster
 wordpress_id: 33
 categories:
 - General

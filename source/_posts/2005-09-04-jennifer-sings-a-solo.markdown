@@ -3,7 +3,7 @@ comments: false
 date: 2005-09-04 18:44:34
 layout: post
 slug: jennifer-sings-a-solo
-title: Jennifer sings a solo
+title: Jennifer Sings a Solo
 wordpress_id: 7
 categories:
 - General
