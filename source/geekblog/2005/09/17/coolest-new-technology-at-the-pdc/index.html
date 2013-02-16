@@ -1,0 +1,40 @@
+---
+layout: geek_page
+title: Blog Archive &raquo; Coolest new technology at the PDC
+---
+		<div class="hentry" id="article-7">
+			<h2 class="entry-title">
+        Coolest new technology at the PDC              </h2>
+
+      <div class="posted">
+        <span class="vcard">
+          Posted by <span class="fn">Kenny</span>
+        </span>
+        <abbr class="published" title="2005-09-17T21:57:42Z"><span class="posted_date" title="Sat, 17 Sep 2005 17:57:42 EDT">on September 17, 2005</span></abbr>
+      </div>
+      <br class="clear" />	
+			<div class="entry-content">
+				<p>OK, so <a href="http://lab.msdn.microsoft.com/vs2005/default.aspx">Visual Studio 2005</a> and the .NET Framework 2.0 are scheduled to be released on November 7. There&#8217;s a lot of cool stuff there, but we&#8217;ve known about that for quite a while and with the beta already in Go Live it hardly qualifies as &#8220;new&#8221; anymore. There&#8217;s <a href="http://msdn.microsoft.com/windowsvista/">Windows Vista</a> which includes some cool enhancements to the end-user experience and provides opportunities for developing some new types of OS add-ons, but it doesn&#8217;t seem like a huge win for general development. There&#8217;s &#8220;Avalon&#8221;, now called Windows Presentation Foundation, which is great for UI developers and graphic designers, but I work more on the back-end stuff. &#8220;Indigo&#8221;, now called Windows Communication Foundation, has some improvements to the development model for Web Services and some efficiency improvements if you&#8217;re doing WCF to WCF and aren&#8217;t concerned about interopability. Other than that, I don&#8217;t see a lot of difference in the development effort required.</p>
+<p>So what is the coolest new technology that Microsoft showed at the PDC? My vote goes to <a href="http://msdn.microsoft.com/library/en-us/dndotnet/html/linqprojectovw.asp">LINQ</a>, which stands for Language Integrated Query. I&#8217;m sure there will be lots of details written about LINQ in the near future, but in a nutshell LINQ allows you to write SQL-like queries in a consistent and type-safe way against .NET collections, SQL data sources, or XML documents. Syntax for the LINQ query language will be handled by the C# 3.0 compiler, but according to Microsoft&#8217;s Anders Hejlsberg, LINQ will not require any changes to the .NET runtime. All the runtime features needed to implement LINQ are already part of the 2.0 Framework.</p>
+<p>The LINQ query language is based on a function pattern that developers can implement for any object type to provide custom query support. Standard implementations are provided for IEnumerable<> collections, Microsoft SQL Server databases, and XML data. The function pattern approach also allows other .NET languages such as Delphi to develop their own query syntax that will support the LINQ functionality.</p>
+<p>For SQL Server databases, LINQ provides new attributes that can be applied to class definitions to define an object-relational mapping, allowing the developer to view the SQL tables as objects and properties. The LINQ preview also contains a tool that will generate the mapping classes for an existing SQL Server schema. For XML, LINQ provides a new object model for XML data that is much simpler and easier to work with than the XML DOM model. In the PDC preview version, there is no way to create a strongly-typed object view of the XML data like there is for SQL, but I expect that a similar tool to generate classes based on an XML schema will be added eventually.</p>
+<p>I think LINQ will be especially useful with collections and XML data where all the data manipulation has to be done in C# code already. The LINQ syntax is much simpler and easier to read than the code that is required today. For SQL databases, there will always be a place for stored procedures on the database server, but LINQ will provide an excellent alternative to building custom SQL query strings or writing hundreds of stored procs for all the different variations of simple SELECT queries. I&#8217;m looking forward to giving it a try.</p>
+	
+							</div>
+      <ul class="meta">
+        <li class="categories">Posted in <a href="/geekblog/category/programming/" title="View all posts in Programming" rel="category tag">Programming</a></li>
+        <li>Meta
+          <a href="#comments">no comments</a>,
+          <a href="/geekblog/2005/09/17/coolest-new-technology-at-the-pdc/" rel="bookmark">permalink</a>
+      </ul>
+		</div>
+		
+  <h5><a name="trackbacks">Trackbacks</a></h5>
+  		<p class="nopings">Trackbacks are closed.</p>
+		
+	
+	
+<!-- You can start editing here. -->
+
+  <h5><a name="comments">Comments</a></h5> 
+  		<p class="nocomments">Comments are closed.</p>
