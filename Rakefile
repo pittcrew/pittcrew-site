@@ -12,6 +12,10 @@ rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
 deploy_default = "rsync"
 
+## -- S3 Deploy config -- ##
+# Be sure your AWS API key and S3 bucket are specified in your _jekyll_s3.yml file
+s3_auto_delete = false
+
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
 
@@ -243,6 +247,12 @@ task :rsync do
   end
   puts "## Deploying website via Rsync"
   ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
+end
+
+desc "Deploy website to Amazon S3"
+task :s3sync do
+  puts "## Deploying website to Amazon S3"
+  Jekyll::S3::CLI.new.run public_dir, s3_auto_delete
 end
 
 desc "deploy public directory to github pages"
