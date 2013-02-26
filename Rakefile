@@ -1,6 +1,7 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
+require "jekyll-s3"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
@@ -295,6 +296,20 @@ task :set_root_dir, :dir do |t, args|
     rm_rf public_dir
     mkdir_p "#{public_dir}#{dir}"
     puts "## Site's root directory is now '/#{dir.sub(/^\//, '')}' ##"
+  end
+end
+
+desc "Create template configuration file for Amazon S3 deployment"
+task :setup_s3 do
+  begin
+    Jekyll::S3::ConfigLoader.check_s3_configuration public_dir
+  rescue Jekyll::S3::NoConfigurationFileError
+    # Update template config file to use Reduced Redundancy Storage by default.
+    config_file = Jekyll::S3::ConfigLoader.get_configuration_file(public_dir)
+    File.open(config_file, 'a') { |f|
+      f.puts 's3_reduced_redundancy: true'
+    }
+    puts "## Created new S3 config file ##"
   end
 end
 
