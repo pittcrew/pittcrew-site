@@ -10,7 +10,6 @@ ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
-deploy_default = "rsync"
 
 ## -- S3 Deploy config -- ##
 # Be sure your AWS API key and S3 bucket are specified in your _jekyll_s3.yml file
@@ -18,6 +17,8 @@ s3_auto_delete = false
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
+
+deploy_default = "s3sync"
 
 ## -- Misc Configs -- ##
 
